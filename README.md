@@ -15,5 +15,3 @@ https://help.github.com/articles/syncing-a-fork/
 ## Lecture Topics
 * Lecture 1: Introduction (lecture materials are contained in the Introductory Material Repo)
 * Lecture 2: Solving ODE's
-=======
-All lecture materials and in-class workbooks will be stored in this repo. 
