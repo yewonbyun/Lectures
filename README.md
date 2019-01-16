@@ -16,4 +16,7 @@ These lecture materials are meant to supplement, not replace, lecture notes in c
 
 ## Lecture Topics
 * Lecture 1: Introduction (lecture materials are contained in the Introductory Material Repo)
-* Lecture 2: Solving ODE's
+* Lecture 2: Solving 1st order initial value problems
+* Lecture 3: Systems of coupled ODE's, Newtons 2nd law.
+* Lecture 4: Building a physical model, object oriented programming intro.
+
