@@ -10,6 +10,8 @@ and
 
 https://help.github.com/articles/syncing-a-fork/
 
+These lecture materials are meant to supplement, not replace, lecture notes in class and textbook readings.
+
 ---
 
 ## Lecture Topics
