@@ -15,8 +15,11 @@ These lecture materials are meant to supplement, not replace, lecture notes in c
 ---
 
 ## Lecture Topics
-* Lecture 1: Introduction (lecture materials are contained in the Introductory Material Repo)
-* Lecture 2: Solving 1st order initial value problems
+* Lecture 1: Introduction (lecture materials are contained in the Introductory Material Repo).
+* Lecture 2: Solving 1st order initial value problems.
 * Lecture 3: Systems of coupled ODE's, Newtons 2nd law.
 * Lecture 4: Building a physical model, object oriented programming intro.
+* Lecture 5: Non-Linear oscillations and chaos.
+* Lecture 6: Understanding chaos: The logistic map.
+* Lecture 7: Lorenz model, attractors, fractals. Using jit to speed up python.
 
