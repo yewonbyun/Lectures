@@ -2,7 +2,7 @@
 **Spring 2019**
 ___
 
-All lecture materials and in-class workbooks will be stored in this repository. Please **fork** this repo to create a local copy on your [https://phys1600.jupyter.brown.edu](Jupyter Hub), local machine, or both (the last option is best). You should also link your fork back to upstream and periodically pull to make sure you have up-to-date lecture materials without loosing any of your own work.  I will be adding additional lecture material throughout the course. 
+All lecture materials and in-class workbooks will be stored in this repository. Please **fork** this repo to create a local copy on your [Jupyter Hub](https://phys1600.jupyter.brown.edu), local machine, or both (the last option is best). You should also link your fork back to upstream and periodically pull to make sure you have up-to-date lecture materials without loosing any of your own work.  I will be adding additional lecture material throughout the course. 
 
 Instructions for forking and syncing a repo can be found here:
 
