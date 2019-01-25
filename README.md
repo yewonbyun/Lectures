@@ -26,4 +26,5 @@ These lecture materials are meant to supplement, not replace, in class lectures 
 * Lecture 5: Non-Linear oscillations and chaos.
 * Lecture 6: Understanding chaos: The logistic map.
 * Lecture 7: Lorenz model, attractors, fractals. Using jit to speed up python.
+* ... to be updated as class proceeds
 
