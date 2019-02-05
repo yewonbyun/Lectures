@@ -24,13 +24,20 @@ class Particle (object):
         # The force on a free particle is 0
         return array([0.0])
 
-    def Euler_step(self): # increment position as before
+    def Euler_step(self): 
+        """
+        Take a single time step using Euler method
+        """
+        
         a = self.F(self.x, self.v, self.t) / self.m
         self.x += self.v * self.dt
         self.v += a * self.dt
         self.t += self.dt
     
     def RK4_step(self):
+        """
+        Take a single time step using RK4 midpoint methon
+        """
         a1 = self.F(self.x, self.v, self.t) / self.m
         k1 = np.array([self.v, a1])*self.dt
 
@@ -48,8 +55,12 @@ class Particle (object):
         
         self.t += self.dt
 
-    def Euler_trajectory(self):  # calculate trajectory as before
-        # will reinitialize euler trajectory everytime this method is called
+    def Euler_trajectory(self):  
+        """
+        Loop over all time steps to construct a trajectory with Euler method
+        Will reinitialize euler trajectory everytime this method is called
+        """
+        
         x_euler = []
         v_euler = []
         
@@ -61,8 +72,12 @@ class Particle (object):
         self.x_euler = np.array(x_euler)
         self.v_euler = np.array(v_euler)
     
-    def RK4_trajectory(self):  # calculate trajectory as before
-        # need to reinitialize if you want to call this method and others
+    def RK4_trajectory(self): 
+        """
+        Loop over all time steps to construct a trajectory with RK4 method
+        Will reinitialize euler trajectory everytime this method is called
+        """
+        
         x_RK4 = []
         v_RK4 = []
         
@@ -76,16 +91,23 @@ class Particle (object):
 
     def scipy_trajectory(self):
         """calculate trajectory using SciPy ode integrator"""
+        
         self.xv = odeint(self.derivative, self.xv0, self.tarray)
 
     def derivative(self, xv, t):
-        """right hand side of the differential equation"""
+        """right hand side of the differential equation
+            Required for odeint """
+        
         x =xv[0]
         v =xv[1]
         a = self.F(x, v, t) / self.m
         return np.ravel(np.array([v, a]))
 
     def results(self):
+        """ 
+        Print out results in a nice format
+        """
+        
         print('\n\t Position and Velocity at Final Time:')
         print('Euler:')
         print('t = {} x = {} v = {}'.format(self.t, self.x , self.v))
@@ -95,6 +117,9 @@ class Particle (object):
             print('t = {} x = {} v = {}'.format(self.tarray[-1], self.xv[-1, 0], self.xv[-1,1]))
 
     def plot(self):
+        """ 
+        Make nice plots of our results
+        """
 
         fig1 = plt.figure()
         ax1 = fig1.add_subplot(111)
